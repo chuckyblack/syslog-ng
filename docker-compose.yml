@@ -1,0 +1,8 @@
+version: '3.4'
+services:
+  syslog:
+    image: jaromirpufler/syslog-ng
+    build: .
+    volumes:
+      - /var/run/syslog-ng:/var/run/syslog-ng
+      - ./log:/var/log/docker
