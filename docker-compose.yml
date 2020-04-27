@@ -5,4 +5,4 @@ services:
     build: .
     volumes:
       - /var/run/syslog-ng:/var/run/syslog-ng
-      - ./log:/var/log/docker
+      - /var/log/docker:/var/log/docker
