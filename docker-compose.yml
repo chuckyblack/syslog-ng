@@ -3,6 +3,7 @@ services:
   syslog:
     image: jaromirpufler/syslog-ng
     build: .
+    ports:
+        - 514:514/udp
     volumes:
-      - /var/run/syslog-ng:/var/run/syslog-ng
       - /var/log/docker:/var/log/docker
